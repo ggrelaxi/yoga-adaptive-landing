@@ -1,5 +1,5 @@
 #first-form {
-  background-image: url("/image/first-form-bg.png");
+  background-image: url("../image/first-form-bg.png");
   max-width: 1920px;
   margin: 0 auto;
   padding: 90px 0 0;
@@ -15,7 +15,7 @@
 #first-form:after {
   content: "";
   position: absolute;
-  background-image: url("/image/rectangle-header-zalivka.png");
+  background-image: url("../image/rectangle-header-zalivka.png");
   z-index: 11;
   bottom: 0px;
   left: 0px;
@@ -796,7 +796,7 @@ table {
 }
 @media (max-width: 1200px) {
   #complect .complect_content .content_bottom {
-    background: url("/image/complect-slider-bg.png") no-repeat center;
+    background: url("../image/complect-slider-bg.png") no-repeat center;
     background-size: cover;
     max-width: 500px;
     width: 100%;
@@ -883,19 +883,19 @@ table {
   text-align: center;
 }
 #complect .complect_content .content_bottom .single_block:nth-child(1) {
-  background: url("/image/complect-bg1.png") no-repeat center;
+  background: url("../image/complect-bg1.png") no-repeat center;
   background-size: cover;
   width: 414px;
   height: 414px;
 }
 #complect .complect_content .content_bottom .single_block:nth-child(2) {
-  background: url("/image/complect-bg2.png") no-repeat center;
+  background: url("../image/complect-bg2.png") no-repeat center;
   background-size: cover;
   width: 414px;
   height: 414px;
 }
 #complect .complect_content .content_bottom .single_block:nth-child(3) {
-  background: url("/image/complect-bg3.png") no-repeat center;
+  background: url("../image/complect-bg3.png") no-repeat center;
   background-size: cover;
   width: 414px;
   height: 414px;
@@ -947,7 +947,7 @@ table {
   position: relative;
 }
 #do-all-time .section_wrapper:after {
-  content: url("/image/do-before.png");
+  content: url("../image/do-before.png");
   position: absolute;
   width: 156px;
   height: 165px;
@@ -1144,7 +1144,7 @@ table {
 #header:after {
   content: "";
   position: absolute;
-  background-image: url("/image/rectangle-header-zalivka.png");
+  background-image: url("../image/rectangle-header-zalivka.png");
   z-index: 11;
   bottom: 0px;
   left: 0px;
@@ -1153,7 +1153,7 @@ table {
 }
 #header:before {
   content: "";
-  background: url("/image/header-line.png");
+  background: url("../image/header-line.png");
   position: absolute;
   z-index: 12;
   bottom: 15px;
@@ -1354,7 +1354,7 @@ table {
 }
 #header .header_content .content_left p:before {
   position: absolute;
-  content: url("/image/header-eclipse.png");
+  content: url("../image/header-eclipse.png");
   top: 0;
   left: 0;
   width: 12px;
@@ -1415,7 +1415,7 @@ table {
   }
 }
 #first-form {
-  background-image: url("/image/first-form-bg.png");
+  background-image: url("../image/first-form-bg.png");
   max-width: 1920px;
   margin: 0 auto;
   padding: 90px 0 0;
@@ -1431,7 +1431,7 @@ table {
 #first-form:after {
   content: "";
   position: absolute;
-  background-image: url("/image/rectangle-header-zalivka.png");
+  background-image: url("../image/rectangle-header-zalivka.png");
   z-index: 11;
   bottom: 0px;
   left: 0px;
@@ -1545,7 +1545,7 @@ table {
   border: 2px solid #ffddbd;
 }
 #first-form .first-form_content .content_left .agreement input:checked + label::before {
-  content: url("/image/vector.png");
+  content: url("../image/vector.png");
 }
 #first-form .first-form_content .content_left .agreement label {
   font-family: "Montserrat", sans-serif;
@@ -1675,7 +1675,7 @@ table {
   max-width: 960px;
 }
 #programm .section_wrapper:before {
-  content: url("/image/programm-before.png");
+  content: url("../image/programm-before.png");
   position: absolute;
   width: 97px;
   height: 292px;
@@ -1688,7 +1688,7 @@ table {
   }
 }
 #programm .section_wrapper:after {
-  content: url("/image/programm-after.png");
+  content: url("../image/programm-after.png");
   position: absolute;
   width: 141px;
   height: 273px;
@@ -1814,7 +1814,7 @@ table {
   }
 }
 #questions .questions_content .content_bottom .question_container label:after {
-  content: url("/image/question-close.png");
+  content: url("../image/question-close.png");
   float: right;
 }
 @media (max-width: 500px) {
@@ -1928,12 +1928,12 @@ table {
   flex-basis: 1070px;
   padding: 40px 80px 40px 40px;
   min-height: 342px;
-  background: url("/image/reviews-bg.png") no-repeat;
+  background: url("../image/reviews-bg.png") no-repeat;
   background-size: contain;
 }
 @media (max-width: 1110px) {
   #reviews .reviews_content .content_bottom .center {
-    background: url("/image/reviews-zalivka.png") repeat;
+    background: url("../image/reviews-zalivka.png") repeat;
   }
 }
 @media (max-width: 800px) {
@@ -1986,7 +1986,7 @@ table {
   color: #f4f1e7;
 }
 #second-form {
-  background-image: url("/image/first-form-bg.png");
+  background-image: url("../image/first-form-bg.png");
   max-width: 1920px;
   margin: 0 auto;
   padding: 90px 0 0;
@@ -2198,7 +2198,7 @@ table {
   border: 2px solid #ffddbd;
 }
 #second-form .form_content .right_content .agreement input:checked + label::before {
-  content: url("/image/vector.png");
+  content: url("../image/vector.png");
 }
 #second-form .form_content .right_content .agreement label {
   font-family: "Montserrat", sans-serif;

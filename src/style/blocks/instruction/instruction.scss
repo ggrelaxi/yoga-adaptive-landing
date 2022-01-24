@@ -1,0 +1,90 @@
+@import '../../variables.scss';
+
+#instruction {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    position: relative;
+    overflow: hidden;
+    background-color: $ligth_orange;
+
+    & .instruction_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            padding: 90px 20px;
+        }
+
+        & .content_top {
+            & h2 {
+                font-size: 36px;
+                line-height: 49px;
+                color: $main_green;
+                max-width: 360px;
+                text-align: center;
+                margin-bottom: 36px;
+            }
+        }
+
+        & .content_bottom {
+            display: flex;
+            flex-wrap: wrap;
+
+            & .single_block {
+                flex-basis: 50%;
+                display: flex;
+                margin-bottom: 58px;
+
+                @media (max-width: 1000px) {
+                    padding-right: 20px;
+                }
+
+                @media (max-width: 800px) {
+                    flex-basis: 100%;
+                    justify-content: center;
+                }
+
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                    align-items: center;
+                    padding-right: unset;
+                }
+
+                & .left {
+                    margin-right: 20px;
+
+                    @media (max-width: 500px) {
+                        margin-right: unset;
+                        align-self: flex-start;
+
+                        & img {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                & .right {
+                    color: unset;
+
+                    & h3 {
+                        color: $main_green;
+                        font-family: 'Prata', sans-serif;
+                        font-size: 24px;
+                        line-height: 33px;
+                        margin-bottom: 12px;
+                        max-width: 313px;
+                    }
+
+                    & p {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 20px;
+                        line-height: 24px;
+                        max-width: 375px;
+                    }
+                }
+            }
+        }
+    }
+}

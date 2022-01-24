@@ -1,0 +1,237 @@
+@import '../../variables.scss';
+
+#second-form {
+    background-image: url('/image/first-form-bg.png');
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    position: relative;
+    overflow: hidden;
+    background-color: $main_green;
+
+    @media (max-width: 1300px) {
+        padding: 90px 20px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 90px 0;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        filter: blur(120px);
+        background: #ffddbd;
+        z-index: 11;
+        bottom: 0px;
+        left: 0px;
+        width: 189px;
+        height: 189px;
+    }
+
+    & .form_content {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 85px;
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        & .left_conetent {
+            @media (max-width: 1100px) {
+                margin-bottom: 110px;
+            }
+        }
+
+        & .right_content {
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ffddbd;
+            max-width: 512px;
+            padding: 30px 40px;
+            margin-left: 120px;
+            position: relative;
+
+            @media (max-width: 1100px) {
+                margin-left: unset;
+            }
+
+            @media (max-width: 500px) {
+                border-radius: unset;
+                border-left: none;
+                border-right: none;
+                padding: 20px;
+
+                &:before {
+                    content: '97%';
+                    color: #f4f1e7;
+                    width: 47px;
+                    height: 47px;
+                    padding: 20px 8px 0 15px;
+
+                    border: 1px solid #ffddbd;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    line-height: 27px;
+                    font-family: 'Prata', sans-serif;
+                    right: 20px;
+                    top: 30px;
+                    position: absolute;
+                }
+            }
+
+            & h2 {
+                font-size: 36px;
+                line-height: 49px;
+                color: #ffddbd;
+                font-family: 'Prata', sans-serif;
+                margin-bottom: 32px;
+                max-width: 356px;
+
+                @media (max-width: 500px) {
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-bottom: 22px;
+                    max-width: 196px;
+                }
+            }
+
+            & .discont {
+                font-family: 'Prata', sans-serif;
+                font-size: 24px;
+                line-height: 33px;
+                color: #f4f1e7;
+                margin-bottom: 36px;
+
+                @media (max-width: 500px) {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+
+                & span:nth-child(1) {
+                    text-transform: uppercase;
+
+                    @media (max-width: 500px) {
+                        display: none;
+                    }
+                }
+
+                & span:nth-child(2) {
+                    color: #ffddbd;
+                    text-transform: unset !important;
+                    padding: 0 20px 0 0;
+                }
+
+                & span:nth-child(3) {
+                    color: #116f58;
+                    text-decoration: line-through;
+                }
+            }
+
+            & .description {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                line-height: 24px;
+                color: $main_light;
+                font-weight: 300;
+                margin-bottom: 35px;
+
+                @media (max-width: 500px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                    max-width: 244px;
+                }
+            }
+
+            & input#second-form_email {
+                max-width: 420px;
+                width: 100%;
+                padding: 19px 33px;
+                background: rgba(229, 229, 229, 0.15);
+                border: 1px solid #ffddbd;
+                box-sizing: border-box;
+                border-radius: 41px;
+                color: #fff1e3;
+                outline: none;
+                display: block;
+                margin-bottom: 24px;
+                font-size: 22px;
+                line-height: 27px;
+                font-family: 'Montserrat', sans-serif;
+
+                @media (max-width: 600px) {
+                    max-width: 100%;
+                }
+
+                &::placeholder {
+                    color: #fff1e3;
+                }
+            }
+
+            & button {
+                width: 420px;
+                height: 70px;
+                background: linear-gradient(180deg, #fee0d6 0%, #ffb8a3 49.27%, #ffaf95 100%);
+                border-radius: 87px;
+                color: #f2f2f2;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                display: block;
+                cursor: pointer !important;
+                z-index: 220;
+                margin-bottom: 39px;
+
+                @media (max-width: 600px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+
+            & .agreement {
+                display: flex;
+                position: relative;
+
+                & input {
+                    display: none;
+
+                    & + label::before {
+                        position: absolute;
+                        left: 0px;
+                        content: '';
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        border: 2px solid #ffddbd;
+                    }
+
+                    &:checked + label::before {
+                        content: url('/image/vector.png');
+                    }
+                }
+
+                & label {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 11px;
+                    line-height: 150%;
+                    color: $main_light;
+                    font-weight: 300;
+                    max-width: 440px;
+                    padding-left: 30px;
+
+                    @media (max-width: 600px) {
+                        max-width: 100%;
+                    }
+
+                    & a {
+                        color: $ligth_orange;
+                    }
+                }
+            }
+        }
+    }
+}

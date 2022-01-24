@@ -129,7 +129,7 @@
   border: 2px solid #ffddbd;
 }
 #first-form .first-form_content .content_left .agreement input:checked + label::before {
-  content: url("/image/vector.png");
+  content: url("../image/vector.png");
 }
 #first-form .first-form_content .content_left .agreement label {
   font-family: "Montserrat", sans-serif;
@@ -689,7 +689,7 @@ table {
 }
 #about .section_wrapper:after {
   position: absolute;
-  content: url("/image/about-yoga-after.png");
+  content: url("../image/about-yoga-after.png");
   width: 175px;
   height: 194px;
   top: 50px;
@@ -1095,7 +1095,7 @@ table {
 }
 @charset "UTF-8";
 #header {
-  background-image: url("/image/rectangle-header-bg.png");
+  background-image: url("../image/rectangle-header-bg.png");
   max-width: 1920px;
   margin: 0 auto;
   height: 100vh;
@@ -1111,7 +1111,7 @@ table {
   }
 }
 #header .section_wrapper:before {
-  content: url("/image/header-before.png");
+  content: url("../image/header-before.png");
   width: 205px;
   height: 312px;
   position: absolute;
